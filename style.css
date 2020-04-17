@@ -50,6 +50,7 @@ header {
   margin-top: 12px;
   padding-bottom: 12px;
   border-bottom: 1px solid #ababab;
+  line-height: 1.2;
 }
 
 header h1 {
@@ -59,6 +60,7 @@ header h1 {
 header img {
   width: 150px;
   border-radius: 50%;
+  margin: 8px 0;
 }
 
 header h2 {
@@ -68,6 +70,10 @@ header h2 {
 
 header p {
   margin: 0;
+}
+
+.mail-wrapper {
+  margin-top: 12px;
 }
 
 header a {
@@ -98,11 +104,16 @@ main {
   padding-bottom: 12px;
 }
 
-.hacker-news {
-  margin-top: 24px;
+
+.projects {
+  margin-top: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.hacker-news {
+  margin-top: 32px;
 }
 
 .projects__img {
@@ -127,6 +138,6 @@ main {
 }
 
 .projects__description {
-  
+
 }
 

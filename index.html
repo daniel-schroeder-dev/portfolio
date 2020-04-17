@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Daniel Schroeder &emdash; Developer Portfolio</title>
+  <title>Daniel Schroeder &#8211; Developer Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
@@ -22,7 +22,7 @@
     <img src="/daniel-schroeder__headshot.jpg" alt="headshot of daniel">
     <h1>Daniel Schroeder</h1>
     <h2>Full-Stack Web Developer</h2>
-    <p><a href="mailto:DanielSchroederDev@gmail.com">DanielSchroederDev@gmail.com</a></p>
+    <p class="mail-wrapper"><a href="mailto:DanielSchroederDev@gmail.com">DanielSchroederDev@gmail.com</a></p>
     <p><a href="https://github.com/daniel-schroeder-dev">https://github.com/daniel-schroeder-dev</a></p>
   </header>
 
@@ -37,14 +37,23 @@
 
     <section id="projects">
       <h3 class="projects-header__title">Recent Projects</h3>
-      <p class="projects-header__description">Here's a few things I've been working on for the past 6 months. I keep this list curated with recent projects, mainly to keep me honest and building new things!</p>
+      <p class="projects-header__description">Here's a few things I've been working on for the past 6 months. I keep this list curated with recent projects, mainly to keep me honest and building new things! Many are hosted on free Heroku dynos, so please be patient for the first page load as the servers sleep after 30 minutes of inactivity.</p>
       <article class="projects hacker-news">
         <img class="projects__img" src="/hacker-news.jpg" alt="hacker-news screenshot" />
         <h4 class="projects__title">Top 20 Articles from Hacker News</h4>
         <p class="projects__date">March, 2020</p>
         <a class="projects__link"  href="https://daniel-schroeder-dev.github.io/hacker-news-top-stories">https://daniel-schroeder-dev.github.io/hacker-news-top-stories</a>
-        <p class="projects__description">Hacker News has great content, but the presentation is a bit lacking. Besides working on some basic list-styling, I used this app to practice working with React Hooks, CSS Animations for the loading icon, and handling multiple XHR requests to the Hacker News API with Promise.all().</p>
+        <p class="projects__description">Hacker News has great content, but the presentation is a bit lacking. Besides working on some basic list-styling, I used this app to practice working with React Hooks, CSS Animations for the loading icon, and handling multiple async XHR requests to the Hacker News API.</p>
       </article>
+
+      <article class="projects">
+        <img class="projects__img" src="/star-wars-rebels.jpg" alt="hacker-news screenshot" />
+        <h4 class="projects__title">Star Wars &#8212; Rebel Leaders</h4>
+        <p class="projects__date">April, 2020</p>
+        <a class="projects__link"  href="https://ds-dev-star-wars-rebels.herokuapp.com/skywalker">https://ds-dev-star-wars-rebels.herokuapp.com/skywalker</a>
+        <p class="projects__description">While learning about React Router, I decided to dig into the History API and create a simple SPA using it. This project was the result. It's inspired by <a href="https://css-tricks.com/using-the-html5-history-api/">Using The HTML5 History API</a> from the great folks at <a href="https://css-tricks.com/">CSS Tricks</a>, and my obsession with all things Star Wars.</p>
+      </article>
+
     </section>
 
   </main>
