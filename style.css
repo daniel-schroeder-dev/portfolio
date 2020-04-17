@@ -6,3 +6,99 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+  letter-spacing: 1.3px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2a3a3a;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ababab;
+  padding: 0 6px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  margin-left: 8px;
+  justify-content: flex-end;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ababab;
+}
+
+header h1 {
+  margin: 8px 0 0 0;
+}
+
+header img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+header p {
+  margin: 0;
+}
+
+header a {
+  color: #7a7a7a;
+  font-size: 12px;
+}
+
+main {
+  padding: 12px;
+}
+
+.about-me a,
+.projects a {
+  color: #3385ff;
+}
+
+#projects h3 {
+  text-align: center;
+  border-bottom: 1px solid #ababab;
+  padding-bottom: 12px;
+}
+
+.hacker-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hacker-news__img {
+  border: 1px solid #ababab;
+  box-shadow: 0px 0px 5px -2px #111;
+  width: 200px;
+}
+
