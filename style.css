@@ -90,29 +90,52 @@ main {
   color: #3385ff;
 }
 
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.about-me p {
+  max-width: 650px;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .projects-header__title {
+  font-size: 24px;
   text-align: center;
   margin: 38px 0 0 0;
 }
 
 .projects-header__description {
-  text-align: center;
   font-size: 12px;
-  border-bottom: 1px solid #ababab;
-  padding-bottom: 12px;
 }
 
+.projects-header__description.last {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ababab;
+}
 
 .projects {
   margin-top: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 450px;
 }
 
-.hacker-news {
+.projects.first {
   margin-top: 32px;
 }
 
@@ -135,9 +158,73 @@ main {
 
 .projects__link {
   font-size: 12px;
+  align-self: flex-start;
 }
 
-.projects__description {
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+footer a {
+  color: #ababab;
+}
+
+@media all and (min-width: 450px) {
+  
+  nav {
+    padding: 0 8px;
+    font-size: 12px;
+  }
+
+  nav ul li a {
+    margin-left: 12px;
+  }
+
+  main {
+    padding: 12px 18px;
+  }
+
+  .projects-header__description {
+    font-size: 14px;
+    max-width: 450px;
+  }
 
 }
 
+@media all and (min-width: 700px) {
+
+  nav {
+    padding: 0 12px;
+    font-size: 14px;
+  }
+
+  header {
+    margin-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  header img {
+    width: 175px;
+  }
+
+  .about-me {
+    margin-top: 6px;
+  }
+
+  .projects-header {
+    margin: 24px 0 44px 0;
+  }
+
+  .projects-header__description.last {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .projects__title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+}

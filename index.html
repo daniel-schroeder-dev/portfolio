@@ -18,7 +18,7 @@
     </ul>
   </nav>
 
-  <header>
+  <header id="contact">
     <img src="/daniel-schroeder__headshot.jpg" alt="headshot of daniel">
     <h1>Daniel Schroeder</h1>
     <h2>Full-Stack Web Developer</h2>
@@ -27,19 +27,49 @@
   </header>
 
   <main>
+
     <section id="about">
       <article class="about-me">
         <p>I’m a full-stack freelance web developer and educator. I discovered my love for programming in my late 20's, and have spent most of my time since then learning how to build things with code. Although I'm mostly self-taught, I have had help from a few college courses, bootcamps, and dozens of tutorials and books. I've worked with JavaScript, Ruby, Java, C, and PHP, in addition to HTML and CSS.</p> 
         <p>I’m interested in learning more about UI/UX design, and would love a chance to work closely with graphic designers on implementing amazing client experiences. I also really enjoy writing server-side code, and am hoping to pursue some dev-ops projects in the near future.</p>
-        <p>Check out my <a href="#projects">Projects</a> or <a href="https://github.com/daniel-schroeder-dev">GitHub</a> if you want to see some examples of my work, and feel free to <a href="#contact">Contact</a> me if you'd like to work together.</p>
+        <p>I'm currently hard at work developing numerous personal projets as well as teaching the next generation of young developers over at <a href="https://codewizardshq.com/">CodeWizardsHQ</a>.</p>
+        <p>Check out my <a href="#projects">projects</a> or head over to my <a href="https://github.com/daniel-schroeder-dev">GitHub</a> if you want to see some examples of my work, and feel free to <a href="#contact">contact</a> me if you'd like to work together or have an opportunity I may be interested in.</p>
       </article>
     </section>
 
     <section id="projects">
-      <h3 class="projects-header__title">Recent Projects</h3>
-      <p class="projects-header__description">Here's a few things I've been working on for the past 6 months. I keep this list curated with recent projects, mainly to keep me honest and building new things! Many are hosted on free Heroku dynos, so please be patient for the first page load as the servers sleep after 30 minutes of inactivity.</p>
-      <article class="projects hacker-news">
-        <img class="projects__img" src="/hacker-news.jpg" alt="hacker-news screenshot" />
+      
+      <div class="projects-header">
+        <h3 class="projects-header__title">Recent Projects</h3>
+        <p class="projects-header__description">Here's a few things I've been working on for the past 6 months. I keep this list curated with recent projects, mainly to keep me honest and building new things!</p> <p class="projects-header__description last">Many are hosted on free Heroku dynos, so please be patient for the first page load as the servers sleep after 30 minutes of inactivity. All of them should be mobile-friendly unless otherwise noted.</p>
+      </div>
+
+      <article class="projects first">
+        <img class="projects__img" src="/guess-the-flag.gif" alt="guess-the-flag screenshot" />
+        <h4 class="projects__title">Guess The Flag</h4>
+        <p class="projects__date">March, 2020</p>
+        <a class="projects__link"  href="https://daniel-schroeder-dev.github.io/guess-the-flag/">https://daniel-schroeder-dev.github.io/guess-the-flag/</a>
+        <p class="projects__description">A little game programming in React to practice lifecycle hooks, state management, and making API requests. It's embarassing how bad I am at my own game...</p>
+      </article>
+
+      <article class="projects">
+        <img class="projects__img" src="/todo-list.gif" alt="todo-list screenshot" />
+        <h4 class="projects__title">todoList</h4>
+        <p class="projects__date">April, 2020</p>
+        <a class="projects__link"  href="https://daniel-schroeder-dev.github.io/todo-list-react/">https://daniel-schroeder-dev.github.io/todo-list-react/</a>
+        <p class="projects__description">I've probably built 100 todo list apps at this point, but it's always a good test of a new framework or concept to throw one together. In this case, I wanted to learn how to hook React up to an Express server with MongoDB as the data store, and a simple todo application was an easy test of my skills. I built it without a framework first <a href="https://ds-dev-todo-list.herokuapp.com/">here</a>.</p>
+      </article>
+
+      <article class="projects">
+        <img class="projects__img" src="/memory-game.gif" alt="memory-game screenshot" />
+        <h4 class="projects__title">Memory Game</h4>
+        <p class="projects__date">March, 2020</p>
+        <a class="projects__link"  href="https://daniel-schroeder-dev.github.io/react__memory-game/">https://daniel-schroeder-dev.github.io/react__memory-game/</a>
+        <p class="projects__description">Another chance to try game programming in React. This one is NOT mobile friendly, just because there wasn't a good way to make the game playable on a mobile device.</p>
+      </article>
+      
+      <article class="projects">
+        <img class="projects__img" src="/hacker-news.gif" alt="hacker-news screenshot" />
         <h4 class="projects__title">Top 20 Articles from Hacker News</h4>
         <p class="projects__date">March, 2020</p>
         <a class="projects__link"  href="https://daniel-schroeder-dev.github.io/hacker-news-top-stories">https://daniel-schroeder-dev.github.io/hacker-news-top-stories</a>
@@ -47,20 +77,51 @@
       </article>
 
       <article class="projects">
-        <img class="projects__img" src="/star-wars-rebels.jpg" alt="hacker-news screenshot" />
+        <img class="projects__img" src="/student-dashboard.gif" alt="student-dashboard screenshot" />
+        <h4 class="projects__title">Student Dashboard</h4>
+        <p class="projects__date">April, 2020</p>
+        <a class="projects__link"  href="https://ds-dev-student-dashboard.herokuapp.com/">https://ds-dev-student-dashboard.herokuapp.com/</a>
+        <p class="projects__description">A chance for me to build a small portion of a fictional CMS for an educational app. Gave me a chance to work on some CSS, as well as get comfortable with the React Router.</p>
+      </article>
+
+      <article class="projects">
+        <img class="projects__img" src="/blog.gif" alt="blog screenshot" />
+        <h4 class="projects__title">Blog Demo</h4>
+        <p class="projects__date">March, 2020</p>
+        <a class="projects__link"  href="https://ds-max-project-blog.herokuapp.com/">https://ds-max-project-blog.herokuapp.com/</a>
+        <p class="projects__description">Another React app that I made to practice working with the React Router and making API calls. I also took some time to create a decent looking UI, although this one is NOT mobile friendly yet as the primary goal was learning the React material. I was using the jsonplaceholder API for the data originally, but it was having some issues so I wrote my own Express/MongoDB app to return dummy data at <a href="https://ds-jsonplaceholder-api.herokuapp.com/posts">jsonplaceholder-api</a>.</p>
+      </article>
+
+      <article class="projects">
+        <img class="projects__img" src="/star-wars-rebels.gif" alt="star-wars-rebels screenshot" />
         <h4 class="projects__title">Star Wars &#8212; Rebel Leaders</h4>
         <p class="projects__date">April, 2020</p>
         <a class="projects__link"  href="https://ds-dev-star-wars-rebels.herokuapp.com/skywalker">https://ds-dev-star-wars-rebels.herokuapp.com/skywalker</a>
         <p class="projects__description">While learning about React Router, I decided to dig into the History API and create a simple SPA using it. This project was the result. It's inspired by <a href="https://css-tricks.com/using-the-html5-history-api/">Using The HTML5 History API</a> from the great folks at <a href="https://css-tricks.com/">CSS Tricks</a>, and my obsession with all things Star Wars.</p>
       </article>
 
+      <article class="projects">
+        <img class="projects__img" src="/random-user.gif" alt="random-user screenshot" />
+        <h4 class="projects__title">Random User Profile</h4>
+        <p class="projects__date">March, 2020</p>
+        <a class="projects__link"  href="https://daniel-schroeder-dev.github.io/random-user-profile/">https://daniel-schroeder-dev.github.io/random-user-profile/</a>
+        <p class="projects__description">A quick project that I did to work on implementing a simple user profile card design. I decided to add a button that pulls data from the random user API so I could work with XHR requests. No frameworks, no fluff, just fun!</p>
+      </article>
+
+      <article class="projects">
+        <img class="projects__img" src="/rcg-assignment-two.gif" alt="rcg-assignment-two screenshot" />
+        <h4 class="projects__title">RCG Project Two</h4>
+        <p class="projects__date">March, 2020</p>
+        <a class="projects__link"  href="https://daniel-schroeder-dev.github.io/rcg-assignment-2/">https://daniel-schroeder-dev.github.io/rcg-assignment-2/</a>
+        <p class="projects__description">React app to practice controlled components and manipulating shared state between components. This was an assignment from a Udemy tutorial series. Also NOT mobile friendly.</p>
+      </article>
+
     </section>
 
   </main>
 
-  <footer id="contact">
-    <p>DanielSchroederDev@gmail.com</p>
-    <p>https://github.com/daniel-schroeder-dev</p>
+  <footer>
+    <a href="#contact">Back To Top</a>
   </footer>
 
 <script type="text/javascript" src="/main.js"></script>
