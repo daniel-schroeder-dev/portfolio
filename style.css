@@ -84,21 +84,49 @@ main {
   color: #3385ff;
 }
 
-#projects h3 {
+
+
+.projects-header__title {
   text-align: center;
+  margin: 38px 0 0 0;
+}
+
+.projects-header__description {
+  text-align: center;
+  font-size: 12px;
   border-bottom: 1px solid #ababab;
   padding-bottom: 12px;
 }
 
 .hacker-news {
+  margin-top: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.hacker-news__img {
+.projects__img {
   border: 1px solid #ababab;
   box-shadow: 0px 0px 5px -2px #111;
   width: 200px;
+}
+
+.projects__title {
+  margin-bottom: 0;
+}
+
+.projects__date {
+  color: #7a7a7a;
+  margin: 6px 0;
+  font-size: 12px;
+  align-self: flex-start;
+}
+
+.projects__link {
+  font-size: 12px;
+}
+
+.projects__description {
+  
 }
 
